@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lora;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #1B1A55;
+}
+
+h3 {
+    color: #FFD23F;
+}
+
+footer {
+    padding: 20px;
+    background-color: #0C2D57;
+    color: white;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px #00000033;
+    border-radius: 1%;
+    padding: 50px;
+    background-color: #58A399;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #0C2D57;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+nav li a:hover {
+    background-color: #070F2B;
+    color: white;
+}
+
+nav {
+    background-color: #59B4C3;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+/* Perangkat dengan Lebar Layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    content, main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+/* Perangkat dengan Lebar layar 768 dan di bawahnya */
+@media screen and (max-width:768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
